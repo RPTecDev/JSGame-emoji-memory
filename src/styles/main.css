@@ -7,7 +7,7 @@ body{
     user-select: none;
 }
 
-.container{
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -48,15 +48,14 @@ h2{
     background-color: #262809;
 }
 
-.game{
-    width: 430px;
-    height: 430px;
-    flex-wrap: wrap;
-    display: flex;
-    gap: 10px;
-    transform-style: preserve-3d;
-    perspective: 500px;
-
+.game {
+  width: 430px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
 }
 
 .item{
@@ -67,20 +66,21 @@ h2{
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    
     font-size: 3em;
     transform: rotateY(180deg);
     transition: 0.25s;
 }
 
-.item::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    transition: 0.25s;
-    transform: rotateY(0deg);
-    backface-visibility: hidden;
-    /* opacity: 0.85; */
-    background: #404040;
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #404040;
+  /* opacity: 0.85; */
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
 }
 
 .item.boxOpen{
@@ -90,5 +90,4 @@ h2{
 
 .boxOPen::after,.boxMatch::after{
     transform: rotateY(180deg);
-
 }
