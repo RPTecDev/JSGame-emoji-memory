@@ -88,7 +88,7 @@ h2{
 
 }
 
-.boxOPen::after,
+.boxOpen::after,
 .boxMatch::after {
     transform: rotateY(180deg);
 }
