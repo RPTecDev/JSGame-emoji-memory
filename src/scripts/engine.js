@@ -55,6 +55,6 @@ for (let i=0; i < emojis.length; i++)
     openCards = [];
 
     if(document.querySelectorAll(".boxMatch").length === emojis.length){
-        alert("Você Venceu!!!");
+        alert("Você Venceu!!! Tu é o Brabo!!!");
     }
     }
