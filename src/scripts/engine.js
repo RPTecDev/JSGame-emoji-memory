@@ -39,7 +39,7 @@ for (let i=0; i < emojis.length; i++)
         }
 
         if(openCards.length ==2 ){
-            setTimeout(checkMatch, 500)
+            setTimeout(checkMatch, 500);
         }
 
         console.log(openCards);
